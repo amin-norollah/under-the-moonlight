@@ -1,0 +1,29 @@
+.background-night {
+  background-image: linear-gradient(to bottom, #211a75, #9dbdf5);
+  height: 100%;
+}
+
+.background-day {
+  background-image: linear-gradient(to bottom, #82e6ff, #ffffcc);
+  height: 100%;
+}
+
+.stick2bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.scale-moon {
+  animation: scaling 3s linear infinite;
+}
+
+@keyframes scaling {
+  from {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
