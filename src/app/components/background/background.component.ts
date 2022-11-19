@@ -108,8 +108,8 @@ export class BackgroundComponent implements OnInit {
   //change colors
   changeMode(isDay: boolean) {
     if (isDay) {
-      this.back4 = this.FST.replace('@color', '85f07b');
-      this.back3 = this.FST.replace('@color', 'b6e36d');
+      this.back4 = this.FST.replace('@color', '81df3c');
+      this.back3 = this.FST.replace('@color', 'a4e835');
       this.back2 = this.FST.replace('@color', '6de062');
       this.back1 = this.FST.replace('@color', 'abf992');
       this.tree1 = this.FST.replace('@color', '42b648');
