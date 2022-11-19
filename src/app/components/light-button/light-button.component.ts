@@ -15,6 +15,7 @@ export class LightButtonComponent implements OnInit {
   constructor() {}
 
   isDay: boolean = false;
+  isLock: boolean = false;
 
   @HostBinding('style.--left.%') left: string = '0.5vw'; // Change it to any Number at any point
   @HostBinding('style.--back-color.%') borderColor: string = '#232052';
@@ -26,6 +27,8 @@ export class LightButtonComponent implements OnInit {
   ngOnInit(): void {}
 
   click() {
+    if (this.isLock) return;
+
     if (this.isDay) {
       //going to night
       this.isDay = false;
@@ -42,5 +45,11 @@ export class LightButtonComponent implements OnInit {
       this.ballColor = '#ffc400';
     }
     this.clickEvent.emit(this.isDay);
+
+    //lock
+    this.isLock = true;
+    setTimeout(() => {
+      this.isLock = false;
+    }, 2000);
   }
 }

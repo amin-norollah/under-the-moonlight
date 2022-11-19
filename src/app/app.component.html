@@ -1,4 +1,8 @@
-<div (mousemove)="mouseMove($event)" class="background-night">
+<div
+  (mousemove)="mouseMove($event)"
+  [style.--back-color]="backColor"
+  class="background-gradient"
+>
   <app-background
     [mouseMoveEvent]="mouseMoveEvent.asObservable()"
     [changeModeEvent]="changeModeEvent.asObservable()"
@@ -14,4 +18,8 @@
     (clickEvent)="changeMode($event)"
     class="day-night-toggle"
   ></app-light-button>
+
+  <p class="footer">
+    Designed by <a href="http://norollah.com">Amin Norollah - balrug</a>.
+  </p>
 </div>

@@ -1,15 +1,35 @@
-.background-night {
-  background-image: linear-gradient(to bottom, #211a75, #9dbdf5);
+.background-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.6)
+  );
+  background-color: var(--back-color);
   height: 100%;
-}
 
-.background-day {
-  background-image: linear-gradient(to bottom, #82e6ff, #ffffcc);
-  height: 100%;
+  transition: background-color 2s;
 }
 
 .day-night-toggle {
   position: absolute;
   left: 40vw;
-  top: 9.5vw;
+  top: 16vh;
+}
+
+.footer {
+  position: absolute;
+  margin: 0.1vh;
+  bottom: 0;
+  right: 1.2vw;
+
+  font-size: max(1vw, 1vh);
+}
+
+.footer > a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer > a:hover {
+  color: rgb(0, 60, 75);
 }
