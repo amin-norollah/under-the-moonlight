@@ -16,9 +16,9 @@ import { Observable, Subscription } from 'rxjs';
 export class MoonSunComponent implements OnInit {
   constructor() {}
 
-  @HostBinding('style.--moon-x.%') moonX: string = '15vw';
-  @HostBinding('style.--moon-y.%') moonY: string = '10vh';
-  @HostBinding('style.--sun-x.%') sunX: string = '-45vw';
+  @HostBinding('style.--moon-x.%') moonX: string = '20vw';
+  @HostBinding('style.--moon-y.%') moonY: string = '20vh';
+  @HostBinding('style.--sun-x.%') sunX: string = '-40vw';
   @HostBinding('style.--sun-y.%') sunY: string = '60vh';
 
   moonStyle: string = 'opacity: 1';
@@ -48,32 +48,32 @@ export class MoonSunComponent implements OnInit {
     if (isDay) {
       //sunrise coming
       //disappear
-      this.moonX = '60vw';
+      this.moonX = '100vw';
       this.moonY = '-40vh';
       setTimeout(() => {
         this.moonStyle = 'opacity: 0';
-        this.moonX = '-45vw';
-        this.moonY = '60vh';
+        this.moonX = '-40vw';
+        this.moonY = '40vh';
       }, 1500);
 
       //show
       this.sunStyle = 'opacity: 1';
-      this.sunX = '15vw';
-      this.sunY = '10vh';
+      this.sunX = '20vw';
+      this.sunY = '20vh';
     } else {
       //sunset coming
       //show
       this.moonStyle = 'opacity: 1';
-      this.moonX = '15vw';
-      this.moonY = '10vh';
+      this.moonX = '20vw';
+      this.moonY = '20vh';
 
       //disappear
-      this.sunX = '60vw';
+      this.sunX = '100vw';
       this.sunY = '-40vh';
       setTimeout(() => {
         this.sunStyle = 'opacity: 0';
-        this.sunX = '-45vw';
-        this.sunY = '60vh';
+        this.sunX = '-40vw';
+        this.sunY = '40vh';
       }, 1500);
     }
   }

@@ -72,20 +72,20 @@ export class BackgroundComponent implements OnInit {
     this.styleBack4 = `left: 
     ${Functions.mapData(this.mousePositionRatio[0], 13, 14)}vw;
     bottom: 
-    ${Functions.mapData(this.mousePositionRatio[1], 0.5, -2)}vh;`;
+    ${Functions.mapData(this.mousePositionRatio[1], 0.5, -6)}vh;`;
 
     this.styleBack3 = `left: 
-    ${Functions.mapData(this.mousePositionRatio[0], 0, 2)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], -1, 1)}vw;
     bottom: 
-    ${Functions.mapData(this.mousePositionRatio[1], 0.85, -2)}vh;`;
+    ${Functions.mapData(this.mousePositionRatio[1], 0.85, -4)}vh;`;
 
     this.styleBack2 = `left: 
-    ${Functions.mapData(this.mousePositionRatio[0], 0, 4)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], -1, 2)}vw;
     bottom: 
     ${Functions.mapData(this.mousePositionRatio[1], 1.25, -2)}vh;`;
 
     this.styleTree = `left: 
-    ${Functions.mapData(this.mousePositionRatio[0], -3, 1)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], -3, 2.5)}vw;
     bottom: ${Functions.mapData(this.mousePositionRatio[1], 8, 5)}vw
     ;`;
 
@@ -95,12 +95,12 @@ export class BackgroundComponent implements OnInit {
     ${Functions.mapData(this.mousePositionRatio[1], -1, 0)}vh;`;
 
     this.stylePond = `left: 
-    ${Functions.mapData(this.mousePositionRatio[0], 5.2, 4.2)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], 5.2, 3.2)}vw;
     bottom: 
     ${Functions.mapData(this.mousePositionRatio[1], 2, 4)}vw;`;
 
     this.styleRock1 = `left: 
-    ${Functions.mapData(this.mousePositionRatio[0], 6, 5)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], 6, 2.5)}vw;
     bottom: 
     ${Functions.mapData(this.mousePositionRatio[1], 1.5, 4)}vw;`;
   }

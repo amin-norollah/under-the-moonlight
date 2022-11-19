@@ -11,7 +11,7 @@ export class HouseComponent implements OnInit {
   constructor() {}
 
   mousePositionRatio: [number, number] = [0, 0];
-  styleHouse: string = 'right: 6vw; bottom: 3vh';
+  styleHouse: string = 'right: 3vw; bottom: 3vh';
   styleRock2: string = 'right: 3vw; bottom: 2vh';
 
   FST: string = 'fill:#@color; transition: fill 2s ease;';
@@ -94,12 +94,12 @@ export class HouseComponent implements OnInit {
     ];
 
     this.styleHouse = `right: 
-    ${Functions.mapData(this.mousePositionRatio[0], 6, 7)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], 3, 5.5)}vw;
     bottom: 
     ${Functions.mapData(this.mousePositionRatio[1], 1, 4)}vh;`;
 
     this.styleRock2 = `right: 
-    ${Functions.mapData(this.mousePositionRatio[0], 2, 4)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], 0.5, 4.5)}vw;
     bottom: 
     ${Functions.mapData(this.mousePositionRatio[1], 1, 3)}vh;`;
   }
