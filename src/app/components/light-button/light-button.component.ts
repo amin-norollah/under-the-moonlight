@@ -57,7 +57,7 @@ export class LightButtonComponent implements OnInit {
     this.isLock = true;
     setTimeout(() => {
       this.isLock = false;
-    }, 2500);
+    }, 2200);
   }
 
   changeInfo(isEnter: boolean) {

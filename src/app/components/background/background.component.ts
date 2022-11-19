@@ -14,10 +14,10 @@ export class BackgroundComponent implements OnInit {
   styleBack4: string = 'left: 10vw';
   styleBack3: string = '';
   styleBack2: string = '';
-  styleTree: string = 'bottom: 12vh';
+  styleTree: string = 'bottom: 7vw';
   styleFront: string = '';
-  stylePond: string = 'left: 5vw; bottom: 7vh';
-  styleRock1: string = 'left: 5vw; bottom: 6vh';
+  stylePond: string = 'left: 5vw; bottom: 3vw';
+  styleRock1: string = 'left: 5vw; bottom: 2.5vw';
 
   FST: string = 'fill:#@color; transition: fill 2s ease;';
 
@@ -86,8 +86,8 @@ export class BackgroundComponent implements OnInit {
 
     this.styleTree = `left: 
     ${Functions.mapData(this.mousePositionRatio[0], -3, 1)}vw;
-    bottom: 
-    ${Functions.mapData(this.mousePositionRatio[1], 16, 12)}vh;`;
+    bottom: ${Functions.mapData(this.mousePositionRatio[1], 8, 5)}vw
+    ;`;
 
     this.styleFront = `left: 
     ${Functions.mapData(this.mousePositionRatio[0], 0, -2)}vw;
@@ -97,12 +97,12 @@ export class BackgroundComponent implements OnInit {
     this.stylePond = `left: 
     ${Functions.mapData(this.mousePositionRatio[0], 5.2, 4.2)}vw;
     bottom: 
-    ${Functions.mapData(this.mousePositionRatio[1], 5, 7)}vh;`;
+    ${Functions.mapData(this.mousePositionRatio[1], 2, 4)}vw;`;
 
     this.styleRock1 = `left: 
     ${Functions.mapData(this.mousePositionRatio[0], 6, 5)}vw;
     bottom: 
-    ${Functions.mapData(this.mousePositionRatio[1], 5.5, 8.5)}vh;`;
+    ${Functions.mapData(this.mousePositionRatio[1], 1.5, 4)}vw;`;
   }
 
   //change colors

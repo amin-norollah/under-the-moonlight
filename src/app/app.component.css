@@ -37,3 +37,21 @@
   color: rgb(0, 60, 75);
   background: lavender;
 }
+
+.mobileMessage {
+  display: none;
+  margin: 3vw;
+  padding: 1.5vw;
+  text-align: center;
+  top: 30vh;
+  position: absolute;
+  border-radius: 1vh;
+
+  background-color: rgb(206, 206, 206);
+}
+
+@media (max-width: 480px) {
+  .mobileMessage {
+    display: block;
+  }
+}
