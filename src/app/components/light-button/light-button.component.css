@@ -1,0 +1,29 @@
+#toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4vw;
+  width: 8vw;
+
+  background-color: var(--back-color);
+  position: absolute;
+  right: 0;
+  border-radius: 4vw;
+  outline: none;
+  cursor: pointer;
+
+  outline: solid 0.3vw var(--border-color);
+
+  transition: all 0.5s;
+}
+#toggle:after {
+  content: "";
+  position: absolute;
+  height: 3vw;
+  width: 3vw;
+  background-color: var(--ball-color);
+  top: 0.5vw;
+  left: var(--left);
+  border-radius: 50%;
+
+  transition: all 0.5s;
+}

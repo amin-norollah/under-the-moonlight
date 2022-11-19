@@ -1,1 +1,14 @@
-<app-background></app-background>
+<div (mousemove)="mouseMove($event)" class="background-night">
+  <app-background
+    [mouseMoveEvent]="mouseMoveEvent.asObservable()"
+    [changeModeEvent]="changeModeEvent.asObservable()"
+  ></app-background>
+  <app-house
+    [mouseMoveEvent]="mouseMoveEvent.asObservable()"
+    [changeModeEvent]="changeModeEvent.asObservable()"
+  ></app-house>
+  <app-light-button
+    (clickEvent)="changeMode($event)"
+    class="day-night-toggle"
+  ></app-light-button>
+</div>
