@@ -1,4 +1,4 @@
-<div>
+<div style="display: flex; align-items: center">
   <input
     type="checkbox"
     id="toggle"
@@ -8,4 +8,17 @@
     [style.--left]="left"
     (click)="click()"
   />
+
+  <button
+    [style.--font-color]="fontColor"
+    [style.--back-color]="backColor"
+    [style.--border-color]="borderColor"
+    class="info"
+    [style]="mouseEnterStyle"
+    (mouseenter)="changeInfo(true)"
+    (mouseleave)="changeInfo(false)"
+  >
+    {{ textInfo }}
+  </button>
 </div>
+<!--  -->

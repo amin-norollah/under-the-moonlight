@@ -95,12 +95,12 @@ export class BackgroundComponent implements OnInit {
     ${Functions.mapData(this.mousePositionRatio[1], -1, 0)}vh;`;
 
     this.stylePond = `left: 
-    ${Functions.mapData(this.mousePositionRatio[0], 5, 4)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], 5.2, 4.2)}vw;
     bottom: 
     ${Functions.mapData(this.mousePositionRatio[1], 5, 7)}vh;`;
 
     this.styleRock1 = `left: 
-    ${Functions.mapData(this.mousePositionRatio[0], 5.5, 4.5)}vw;
+    ${Functions.mapData(this.mousePositionRatio[0], 6, 5)}vw;
     bottom: 
     ${Functions.mapData(this.mousePositionRatio[1], 5.5, 8.5)}vh;`;
   }

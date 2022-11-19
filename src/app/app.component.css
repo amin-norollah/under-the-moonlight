@@ -13,7 +13,7 @@
 .day-night-toggle {
   position: absolute;
   left: 40vw;
-  top: 16vh;
+  top: 20vh;
 }
 
 .footer {
@@ -26,10 +26,14 @@
 }
 
 .footer > a {
+  padding: 0 0.3vw;
   color: black;
   text-decoration: none;
+
+  transition: all 0.5s;
 }
 
 .footer > a:hover {
   color: rgb(0, 60, 75);
+  background: lavender;
 }

@@ -10,7 +10,15 @@ import { MoonInstanceComponent } from './components/moon-sun/moon-instance/moon-
 import { SunInstanceComponent } from './components/moon-sun/sun-instance/sun-instance.component';
 
 @NgModule({
-  declarations: [AppComponent, BackgroundComponent, HouseComponent, LightButtonComponent, MoonSunComponent, MoonInstanceComponent, SunInstanceComponent],
+  declarations: [
+    AppComponent,
+    BackgroundComponent,
+    HouseComponent,
+    LightButtonComponent,
+    MoonSunComponent,
+    MoonInstanceComponent,
+    SunInstanceComponent,
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

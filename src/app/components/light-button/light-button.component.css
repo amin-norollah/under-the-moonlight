@@ -27,3 +27,18 @@
 
   transition: all 0.5s;
 }
+
+.info {
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  border-radius: 3vw;
+  background-color: var(--back-color);
+  border: solid 0.3vw var(--border-color);
+
+  font-size: max(1vw, 1vh);
+  color: var(--font-color);
+  margin-left: 0.3vw;
+
+  transition: all 0.5s;
+}
