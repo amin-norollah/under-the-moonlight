@@ -1,0 +1,13 @@
+.moon {
+  position: absolute;
+  transform: translate(var(--moon-x), var(--moon-y));
+
+  transition: transform 2s ease;
+}
+
+.sun {
+  position: absolute;
+  transform: translate(var(--sun-x), var(--sun-y));
+
+  transition: transform 2s ease;
+}

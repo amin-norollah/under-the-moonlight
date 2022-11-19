@@ -7,6 +7,9 @@
     [mouseMoveEvent]="mouseMoveEvent.asObservable()"
     [changeModeEvent]="changeModeEvent.asObservable()"
   ></app-house>
+  <app-moon-sun
+    [changeModeEvent]="changeModeEvent.asObservable()"
+  ></app-moon-sun>
   <app-light-button
     (clickEvent)="changeMode($event)"
     class="day-night-toggle"

@@ -14,7 +14,9 @@ export class HouseComponent implements OnInit {
   styleHouse: string = 'right: 6vw; bottom: 3vh';
   styleRock2: string = 'right: 5vw; bottom: 2vh';
 
-  backlight: string = 'fill:#ffd24a';
+  FST: string = 'fill:#@color; transition: fill 2s ease;';
+
+  backlight: string = 'fill:#ffd24a;';
   fil37: string = 'fill:#130210';
   fil36: string = 'fill:#231C4B';
   fil2: string = 'fill:#2D0F3A';
@@ -97,5 +99,21 @@ export class HouseComponent implements OnInit {
   }
 
   //change colors
-  changeMode(isDay: boolean) {}
+  changeMode(isDay: boolean) {
+    if (isDay) {
+      //sunrise coming
+
+      //backlight turn off after 3 seconds
+      setTimeout(() => {
+        this.backlight = this.FST.replace('@color', '000');
+      }, 3000);
+    } else {
+      //sunset coming
+
+      //backlight turn on after 3 seconds
+      setTimeout(() => {
+        this.backlight = this.FST.replace('@color', 'ffd24a');
+      }, 3000);
+    }
+  }
 }
