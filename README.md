@@ -10,9 +10,7 @@ This project is developed using Angular framework. I would be happy to know your
 
 # Contact me
 
-You can contact me through my website.
-
-[norollah.com](http://norollah.com)
+You can contact me through my website at [norollah.com](http://norollah.com).
 
 ## Run the application
 
