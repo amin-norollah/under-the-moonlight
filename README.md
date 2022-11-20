@@ -1,27 +1,21 @@
-# UnderTheMoonlight
+![alt text](https://github.com/amin-norollah/under-the-moonlight/banner.jpg)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+# Under The Moon light
 
-## Development server
+This project is a work of art. Have you ever been bored and looking for something to cheer you up? This is the same project that I developed with love and pleasure. The images in this project were all designed from scratch and then converted to SVG format with the help of corelDraw tool. This was just the beginning and I separated the SVG codes and put them in my HTML files. I changed their styles and classes and make them dynamically based on events and, in summary, I tried to develop a magnificent work of art.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is developed using Angular framework. I would be happy to know your opinion about this project.
 
-## Code scaffolding
+# Contact me
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can contact me through my website.
 
-## Build
+[norollah.com](http://norollah.com)
+
+## Run the application
+
+Run `npm i` to install all the project's packages. Then, by running `npm start`, the project will be compiled and available in `http://localhost:4200/`.
+
+## Build the application
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
