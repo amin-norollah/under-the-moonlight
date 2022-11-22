@@ -1,0 +1,32 @@
+.star {
+  opacity: 0;
+  -moz-opacity: 0;
+
+  animation: glitter 5s linear var(--delay) infinite normal;
+  -webkit-animation: glitter 5s linear var(--delay) infinite normal;
+  -moz-animation: glitter 5s linear var(--delay) infinite normal;
+  -ms-animation: glitter 5s linear var(--delay) infinite normal;
+  -o-animation: glitter 5s linear var(--delay) infinite normal;
+}
+
+@keyframes glitter {
+  0% {
+    -webkit-transform: scale(0.3) rotate(0deg);
+    opacity: 0;
+    /* filter: blur(4px); */
+  }
+  35% {
+    -webkit-transform: scale(1) rotate(360deg);
+    opacity: 1;
+    /* filter: blur(0); */
+  }
+  70% {
+    -webkit-transform: scale(0.3) rotate(720deg);
+    opacity: 0;
+    /* filter: blur(4px); */
+  }
+  100% {
+    -webkit-transform: scale(0.3) rotate(0deg);
+    opacity: 0;
+  }
+}

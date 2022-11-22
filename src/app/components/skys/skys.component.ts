@@ -1,19 +1,13 @@
-import {
-  Component,
-  ElementRef,
-  HostBinding,
-  Input,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
+import { Component, HostBinding, Input, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
+import { IStars } from '../../shared/Interfaces';
 
 @Component({
-  selector: 'app-moon-sun',
-  templateUrl: './moon-sun.component.html',
-  styleUrls: ['./moon-sun.component.css'],
+  selector: 'app-skys',
+  templateUrl: './skys.component.html',
+  styleUrls: ['./skys.component.css'],
 })
-export class MoonSunComponent implements OnInit {
+export class SkysComponent implements OnInit {
   constructor() {}
 
   @HostBinding('style.--moon-x.%') moonX: string = '20vw';
@@ -23,9 +17,7 @@ export class MoonSunComponent implements OnInit {
 
   moonStyle: string = 'opacity: 1';
   sunStyle: string = 'opacity: 1';
-
-  // @ViewChild('moon') private moonElement: ElementRef;
-  // @ViewChild('sun') private sunElement: ElementRef;
+  starsParameters: IStars[] = [];
 
   ////////////////////////////////////////////////////////
   // receive propagated events
@@ -37,6 +29,9 @@ export class MoonSunComponent implements OnInit {
     this.changeModeEventSubscription = this.changeModeEvent.subscribe(
       (isDay: boolean) => this.changeMode(isDay)
     );
+
+    //generate stars
+    this.starsParameters = this.calculateStars(12);
   }
 
   ngOnDestroy() {
@@ -56,6 +51,9 @@ export class MoonSunComponent implements OnInit {
         this.moonY = '40vh';
       }, 1500);
 
+      //remove stars
+      this.starsParameters = [];
+
       //show
       this.sunStyle = 'opacity: 1';
       this.sunX = '20vw';
@@ -67,6 +65,9 @@ export class MoonSunComponent implements OnInit {
       this.moonX = '20vw';
       this.moonY = '20vh';
 
+      //generate stars
+      this.starsParameters = this.calculateStars(12);
+
       //disappear
       this.sunX = '100vw';
       this.sunY = '-40vh';
@@ -76,5 +77,18 @@ export class MoonSunComponent implements OnInit {
         this.sunY = '40vh';
       }, 1500);
     }
+  }
+
+  // Generate stars
+  calculateStars(num: number): IStars[] {
+    return new Array(num).fill(0).map<IStars>(() => {
+      const tmp: IStars = {
+        name: 'star7',
+        size: 10 * Math.random() + 9,
+        delay: 5 * Math.random(),
+        style: `left: ${100 * Math.random()}vw; top: ${20 * Math.random()}vh`,
+      };
+      return tmp;
+    });
   }
 }

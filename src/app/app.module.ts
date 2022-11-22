@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { HouseComponent } from './components/house/house.component';
 import { LightButtonComponent } from './components/light-button/light-button.component';
-import { MoonSunComponent } from './components/moon-sun/moon-sun.component';
-import { MoonInstanceComponent } from './components/moon-sun/moon-instance/moon-instance.component';
-import { SunInstanceComponent } from './components/moon-sun/sun-instance/sun-instance.component';
+import { SkysComponent } from './components/skys/skys.component';
+import { MoonInstanceComponent } from './components/skys/moon-instance/moon-instance.component';
+import { SunInstanceComponent } from './components/skys/sun-instance/sun-instance.component';
+import { StarInstanceComponent } from './components/skys/star-instance/star-instance.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,10 @@ import { SunInstanceComponent } from './components/moon-sun/sun-instance/sun-ins
     BackgroundComponent,
     HouseComponent,
     LightButtonComponent,
-    MoonSunComponent,
+    SkysComponent,
     MoonInstanceComponent,
     SunInstanceComponent,
+    StarInstanceComponent,
   ],
   imports: [BrowserModule],
   providers: [],

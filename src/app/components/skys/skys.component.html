@@ -12,4 +12,14 @@
     [style]="sunStyle"
     class="sun"
   ></app-sun-instance>
+
+  <div class="stars">
+    <app-star-instance
+      *ngFor="let param of starsParameters"
+      [title]="param.name"
+      [size]="param.size"
+      [delay]="param.delay"
+      [style]="param.style"
+    ></app-star-instance>
+  </div>
 </div>

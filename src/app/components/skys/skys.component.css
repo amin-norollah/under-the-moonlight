@@ -13,3 +13,9 @@
 
   transition: transform 1.2s ease-in-out;
 }
+
+.stars > * {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+}
