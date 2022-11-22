@@ -81,9 +81,9 @@ export class SkysComponent implements OnInit {
 
   // Generate stars
   calculateStars(num: number): IStars[] {
-    return new Array(num).fill(0).map<IStars>(() => {
+    return new Array(num).fill(0).map<IStars>((_, index) => {
       const tmp: IStars = {
-        name: 'star7',
+        name: `star${index}`,
         size: 10 * Math.random() + 9,
         delay: 5 * Math.random(),
         style: `left: ${100 * Math.random()}vw; top: ${20 * Math.random()}vh`,
