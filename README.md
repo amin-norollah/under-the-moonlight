@@ -2,7 +2,13 @@
 
 # Under The Moon light
 
-This project is a work of art. Have you ever been bored and looking for something to cheer you up? This is the same project that I developed with love and pleasure. The images in this project were all designed from scratch and then converted to SVG format with the help of corelDraw tool. This was just the beginning and I separated the SVG codes and put them in my HTML files. I changed their styles and classes and make them dynamically based on events and, in summary, I tried to develop a magnificent work of art.
+This project was born out of a desire to create something that could bring a little bit of joy and happiness to people's lives, especially during times when they may be feeling bored or down.
+
+To create the visuals for the project, I started from scratch and used my creativity to design unique and captivating images. I then turned them into SVG with the assistance of CorelDRAW, which allowed me to maintain the quality and clarity of the images regardless of their size.
+
+After incorporating the SVG codes into my HTML files, I put my front-end development skills to use to make the images dynamic and interactive. By adjusting their styles and classes based on different events, I was able to create a truly immersive and engaging experience for users.
+
+Overall, this project was a labor of love that allowed me to combine my passion for design and programming. I am incredibly proud of the end result and hope that it can bring a little bit of joy and inspiration to everyone who interacts with it.
 
 This project is developed using Angular framework. I would be happy to know your opinion about this project.
 
